@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import ButtonLike from './ButtonLike.js';
-import ButtonRemove from './ButtonRemove.js';
+import ButtonLike from './ButtonLike.jsx';
+import ButtonRemove from './ButtonRemove.jsx';
 
 class Post extends React.Component {
 

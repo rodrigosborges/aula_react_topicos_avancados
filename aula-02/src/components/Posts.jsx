@@ -1,8 +1,7 @@
 import React from 'react';
 import '../App.css';
-import Post from './Post.js';
+import Post from './Post.jsx';
 import dataJson from '../posts.json';
-import { BrowserRouter as Router, Route,Link } from "react-router-dom";
 
 class Posts extends React.Component{
   constructor(props){

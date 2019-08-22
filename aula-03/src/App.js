@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Posts from './screens/Posts.jsx';
+import Converter from './screens/Converter.jsx';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends React.Component{
   render(){
     return (
       <Router>
-        <Route path="/" exact component={Posts} />
+        <Route path="/" exact component={Converter} />
       </Router>
     )
   }
