@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img{
+  width: 200px;
+  height: 200px;
+}
+
+.post{
+  padding:10px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+.like{
+  background-color: blue;
+}
+
+.button-remove{
+  background-color: red;
+  margin-bottom: 3px;
+  float: right;
+}

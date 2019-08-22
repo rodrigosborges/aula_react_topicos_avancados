@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>React - Aula 01</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react-with-addons.js"></script>
+	</head>
+	<body>
+		<div id="root"></div>
+
+		<script type="text/babel">
+			class App01 extends React.Component{
+				constructor(){
+					super()
+					this.state = {
+						contador: 0,
+					}
+				}
+
+				_somarContador(valor){
+					this.setState({
+						contador: this.state.contador + valor
+					})
+				}
+
+				render(){
+					return (
+						<div>
+							<h1>Hello World</h1>
+							<span>{this.state.contador}</span><br/>
+							<button onClick={() => this._somarContador(1)}>Somar</button>
+							<button onClick={() => this._somarContador(-1)}>Subtrair</button>
+						</div>
+					)
+				}
+			}
+			React.render(<App01/>, document.getElementById('root'))
+		</script>
+	</body>
+</html>
