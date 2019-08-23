@@ -17,3 +17,8 @@ https://pt-br.reactjs.org/docs/getting-started.html
 ```
     npm start
 ```
+
+### Biblioteca para rotas
+```
+    npm install --save react-router-dom
+```
